@@ -2,6 +2,25 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_f17 {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp F17>;
+        };
+        combo_f18 {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp F18>;
+        };
+        combo_f19 {
+            timeout-ms = <50>;
+            key-positions = <0 2>;
+            bindings = <&kp F19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
